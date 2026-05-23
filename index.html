@@ -16,12 +16,13 @@
     <div class="nav-container">
       <div class="nav-logo">CG<span class="dot">.</span></div>
       <ul class="nav-links">
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a href="#about" data-es="Sobre mí" data-en="About">Sobre mí</a></li>
+        <li><a href="#skills" data-es="Skills" data-en="Skills">Skills</a></li>
+        <li><a href="#projects" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+        <li><a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a></li>
       </ul>
-      <a href="#download" class="nav-cta">Descargar App</a>
+      <button id="lang-btn" class="lang-btn" onclick="toggleLang()">🇬🇧 <span>EN</span></button>
+      <a href="#download" class="nav-cta" data-es="Descargar App" data-en="Download App">Descargar App</a>
     </div>
   </nav>
 
@@ -32,43 +33,42 @@
       <div class="hero-content">
         <div class="hero-badge">
           <span class="badge-dot"></span>
-          Disponible para trabajar
+          <span data-es="Disponible para trabajar" data-en="Available for work">Disponible para trabajar</span>
         </div>
         <h1 class="hero-title">
           <span>Christian</span>
           <span class="accent">González</span>
         </h1>
         <p class="hero-role">Mobile Developer <span class="sep">•</span> Flutter <span class="sep">•</span> JavaScript</p>
-        <p class="hero-desc">
-          Construyo experiencias móviles visualmente impactantes con Flutter.
-          Animaciones fluidas, glassmorphism, CustomPainter y UI moderna.
+        <p class="hero-desc" data-es="Construyo experiencias móviles visualmente impactantes con Flutter. Animaciones fluidas, glassmorphism, CustomPainter y UI moderna." data-en="I build visually impactful mobile experiences with Flutter. Smooth animations, glassmorphism, CustomPainter and modern UI.">
+          Construyo experiencias móviles visualmente impactantes con Flutter. Animaciones fluidas, glassmorphism, CustomPainter y UI moderna.
         </p>
         <div class="hero-buttons">
           <a href="#download" class="btn btn-primary">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Descargar App
+            <span data-es="Descargar App" data-en="Download App">Descargar App</span>
           </a>
-          <a href="#projects" class="btn btn-ghost">Ver proyectos</a>
+          <a href="#projects" class="btn btn-ghost" data-es="Ver proyectos" data-en="See projects">Ver proyectos</a>
         </div>
         <div class="hero-stats">
           <div class="stat-item">
             <span class="stat-num" data-target="2">0</span><span class="stat-suffix">+</span>
-            <span class="stat-lbl">Proyectos</span>
+            <span class="stat-lbl" data-es="Proyectos" data-en="Projects">Proyectos</span>
           </div>
           <div class="stat-div"></div>
           <div class="stat-item">
             <span class="stat-num" data-target="2">0</span>
-            <span class="stat-lbl">Lenguajes</span>
+            <span class="stat-lbl" data-es="Lenguajes" data-en="Languages">Lenguajes</span>
           </div>
           <div class="stat-div"></div>
           <div class="stat-item">
             <span class="stat-num" data-target="100">0</span><span class="stat-suffix">%</span>
-            <span class="stat-lbl">Dedicación</span>
+            <span class="stat-lbl" data-es="Dedicación" data-en="Dedication">Dedicación</span>
           </div>
         </div>
       </div>
 
-      <!-- Mockup de teléfono -->
+      <!-- Phone mockup -->
       <div class="hero-visual">
         <div class="phone">
           <div class="phone-notch"></div>
@@ -80,32 +80,16 @@
                   <div class="app-name-sm">Christian González</div>
                   <div class="app-role-sm">Mobile Developer</div>
                 </div>
-                <div class="app-badge-sm">● Disponible</div>
+                <div class="app-badge-sm">● <span data-es="Disponible" data-en="Available">Disponible</span></div>
               </div>
               <div class="app-bars-preview">
-                <div class="pb-row">
-                  <span>Flutter</span>
-                  <div class="pb-track"><div class="pb-fill" style="width:80%; background: linear-gradient(90deg,#4F9CF9,#7C3AED)"></div></div>
-                  <span class="pb-pct">80%</span>
-                </div>
-                <div class="pb-row">
-                  <span>JavaScript</span>
-                  <div class="pb-track"><div class="pb-fill" style="width:65%; background: linear-gradient(90deg,#F7DF1E,#F59E0B)"></div></div>
-                  <span class="pb-pct">65%</span>
-                </div>
-                <div class="pb-row">
-                  <span>HTML/CSS</span>
-                  <div class="pb-track"><div class="pb-fill" style="width:75%; background: linear-gradient(90deg,#E34C26,#EF4444)"></div></div>
-                  <span class="pb-pct">75%</span>
-                </div>
-                <div class="pb-row">
-                  <span>C# / Unity</span>
-                  <div class="pb-track"><div class="pb-fill" style="width:60%; background: linear-gradient(90deg,#9B4F96,#7C3AED)"></div></div>
-                  <span class="pb-pct">60%</span>
-                </div>
+                <div class="pb-row"><span>Flutter</span><div class="pb-track"><div class="pb-fill" style="width:80%;background:linear-gradient(90deg,#4F9CF9,#7C3AED)"></div></div><span class="pb-pct">80%</span></div>
+                <div class="pb-row"><span>JavaScript</span><div class="pb-track"><div class="pb-fill" style="width:65%;background:linear-gradient(90deg,#F7DF1E,#F59E0B)"></div></div><span class="pb-pct">65%</span></div>
+                <div class="pb-row"><span>HTML/CSS</span><div class="pb-track"><div class="pb-fill" style="width:75%;background:linear-gradient(90deg,#E34C26,#EF4444)"></div></div><span class="pb-pct">75%</span></div>
+                <div class="pb-row"><span>C++ / Unity</span><div class="pb-track"><div class="pb-fill" style="width:60%;background:linear-gradient(90deg,#9B4F96,#7C3AED)"></div></div><span class="pb-pct">60%</span></div>
               </div>
               <div class="app-chips-preview">
-                <span class="chip-sm">Animaciones</span>
+                <span class="chip-sm">Animations</span>
                 <span class="chip-sm">UI/UX</span>
                 <span class="chip-sm">Glassmorphism</span>
               </div>
@@ -121,12 +105,19 @@
   <!-- ABOUT -->
   <section class="about" id="about">
     <div class="container">
-      <span class="section-tag">Sobre mí</span>
-      <h2 class="section-title">Desarrollador apasionado<br>por el <span class="accent">detalle visual</span></h2>
+      <span class="section-tag" data-es="Sobre mí" data-en="About me">Sobre mí</span>
+      <h2 class="section-title">
+        <span data-es="Desarrollador apasionado por el" data-en="Developer passionate about">Desarrollador apasionado por el</span>
+        <br><span class="accent" data-es="detalle visual" data-en="visual detail">detalle visual</span>
+      </h2>
       <div class="about-grid">
         <div class="about-text">
-          <p>Soy Christian González, desarrollador mobile especializado en Flutter y Dart. Me apasiona crear interfaces que no solo funcionan — sorprenden al usuario con animaciones fluidas y diseños impactantes.</p>
-          <p>También tengo experiencia en desarrollo web con JavaScript y HTML/CSS, y en videojuegos 2D con Unity y C#. Siempre aprendiendo, siempre construyendo.</p>
+          <p data-es="Soy Christian González, desarrollador mobile especializado en Flutter y Dart. Me apasiona crear interfaces que no solo funcionan — sorprenden al usuario con animaciones fluidas y diseños impactantes." data-en="I'm Christian González, a mobile developer specialized in Flutter and Dart. I'm passionate about creating interfaces that don't just work — they surprise users with smooth animations and impactful designs.">
+            Soy Christian González, desarrollador mobile especializado en Flutter y Dart. Me apasiona crear interfaces que no solo funcionan — sorprenden al usuario con animaciones fluidas y diseños impactantes.
+          </p>
+          <p data-es="También tengo experiencia en desarrollo web con JavaScript y HTML/CSS, y en videojuegos 3D con Unity y C++. Siempre aprendiendo, siempre construyendo." data-en="I also have experience in web development with JavaScript and HTML/CSS, and in 3D game development with Unity and C++. Always learning, always building.">
+            También tengo experiencia en desarrollo web con JavaScript y HTML/CSS, y en videojuegos 3D con Unity y C++. Siempre aprendiendo, siempre construyendo.
+          </p>
           <div class="about-meta">
             <div class="meta-item">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -138,7 +129,7 @@
             </div>
             <div class="meta-item available-pill">
               <span class="pulse-dot"></span>
-              Disponible para trabajo remoto
+              <span data-es="Disponible para trabajo remoto" data-en="Available for remote work">Disponible para trabajo remoto</span>
             </div>
           </div>
         </div>
@@ -146,22 +137,22 @@
           <div class="tech-card">
             <div class="tc-icon" style="color:#4F9CF9">📱</div>
             <h3>Flutter / Dart</h3>
-            <p>Apps Android e iOS con animaciones personalizadas y UI avanzada</p>
+            <p data-es="Apps Android e iOS con animaciones personalizadas y UI avanzada" data-en="Android and iOS apps with custom animations and advanced UI">Apps Android e iOS con animaciones personalizadas y UI avanzada</p>
           </div>
           <div class="tech-card">
             <div class="tc-icon" style="color:#F7DF1E">🌐</div>
             <h3>JavaScript</h3>
-            <p>Desarrollo web dinámico, DOM, APIs y páginas interactivas</p>
+            <p data-es="Desarrollo web dinámico, DOM, APIs y páginas interactivas" data-en="Dynamic web development, DOM, APIs and interactive pages">Desarrollo web dinámico, DOM, APIs y páginas interactivas</p>
           </div>
           <div class="tech-card">
             <div class="tc-icon" style="color:#E34C26">🎨</div>
             <h3>HTML / CSS</h3>
-            <p>Interfaces web responsivas, animaciones CSS, diseño moderno</p>
+            <p data-es="Interfaces web responsivas, animaciones CSS, diseño moderno" data-en="Responsive web interfaces, CSS animations, modern design">Interfaces web responsivas, animaciones CSS, diseño moderno</p>
           </div>
           <div class="tech-card">
             <div class="tc-icon" style="color:#9B4F96">🎮</div>
-            <h3>Unity / C#</h3>
-            <p>Videojuegos 2D con generación procedural e inteligencia artificial</p>
+            <h3>Unity / C++</h3>
+            <p data-es="Videojuegos 3D con generación procedural e inteligencia artificial" data-en="3D video games with procedural generation and artificial intelligence">Videojuegos 3D con generación procedural e inteligencia artificial</p>
           </div>
         </div>
       </div>
@@ -171,43 +162,28 @@
   <!-- SKILLS -->
   <section class="skills" id="skills">
     <div class="container">
-      <span class="section-tag">Habilidades</span>
-      <h2 class="section-title">Lo que <span class="accent">sé hacer</span></h2>
+      <span class="section-tag" data-es="Habilidades" data-en="Skills">Habilidades</span>
+      <h2 class="section-title">
+        <span data-es="Lo que" data-en="What I">Lo que</span>
+        <span class="accent" data-es="sé hacer" data-en="can do"> sé hacer</span>
+      </h2>
       <div class="skills-grid">
         <div class="skills-bars">
-          <div class="sk-item">
-            <div class="sk-head"><span>📱 Flutter / Dart</span><span class="sk-pct">80%</span></div>
-            <div class="sk-track"><div class="sk-fill" data-w="80" style="background:linear-gradient(90deg,#4F9CF9,#7C3AED)"></div></div>
-          </div>
-          <div class="sk-item">
-            <div class="sk-head"><span>🌐 JavaScript</span><span class="sk-pct">65%</span></div>
-            <div class="sk-track"><div class="sk-fill" data-w="65" style="background:linear-gradient(90deg,#F7DF1E,#F59E0B)"></div></div>
-          </div>
-          <div class="sk-item">
-            <div class="sk-head"><span>🎨 HTML / CSS</span><span class="sk-pct">75%</span></div>
-            <div class="sk-track"><div class="sk-fill" data-w="75" style="background:linear-gradient(90deg,#E34C26,#EF4444)"></div></div>
-          </div>
-          <div class="sk-item">
-            <div class="sk-head"><span>🎮 C# / Unity</span><span class="sk-pct">60%</span></div>
-            <div class="sk-track"><div class="sk-fill" data-w="60" style="background:linear-gradient(90deg,#9B4F96,#7C3AED)"></div></div>
-          </div>
-          <div class="sk-item">
-            <div class="sk-head"><span>🔧 Git / GitHub</span><span class="sk-pct">70%</span></div>
-            <div class="sk-track"><div class="sk-fill" data-w="70" style="background:linear-gradient(90deg,#F05032,#EF4444)"></div></div>
-          </div>
-          <div class="sk-item">
-            <div class="sk-head"><span>✨ UI/UX Design</span><span class="sk-pct">65%</span></div>
-            <div class="sk-track"><div class="sk-fill" data-w="65" style="background:linear-gradient(90deg,#10B981,#4F9CF9)"></div></div>
-          </div>
+          <div class="sk-item"><div class="sk-head"><span>📱 Flutter / Dart</span><span class="sk-pct">80%</span></div><div class="sk-track"><div class="sk-fill" data-w="80" style="background:linear-gradient(90deg,#4F9CF9,#7C3AED)"></div></div></div>
+          <div class="sk-item"><div class="sk-head"><span>🌐 JavaScript</span><span class="sk-pct">65%</span></div><div class="sk-track"><div class="sk-fill" data-w="65" style="background:linear-gradient(90deg,#F7DF1E,#F59E0B)"></div></div></div>
+          <div class="sk-item"><div class="sk-head"><span>🎨 HTML / CSS</span><span class="sk-pct">75%</span></div><div class="sk-track"><div class="sk-fill" data-w="75" style="background:linear-gradient(90deg,#E34C26,#EF4444)"></div></div></div>
+          <div class="sk-item"><div class="sk-head"><span>🎮 C++ / Unity</span><span class="sk-pct">60%</span></div><div class="sk-track"><div class="sk-fill" data-w="60" style="background:linear-gradient(90deg,#9B4F96,#7C3AED)"></div></div></div>
+          <div class="sk-item"><div class="sk-head"><span>🔧 Git / GitHub</span><span class="sk-pct">70%</span></div><div class="sk-track"><div class="sk-fill" data-w="70" style="background:linear-gradient(90deg,#F05032,#EF4444)"></div></div></div>
+          <div class="sk-item"><div class="sk-head"><span>✨ UI/UX Design</span><span class="sk-pct">65%</span></div><div class="sk-track"><div class="sk-fill" data-w="65" style="background:linear-gradient(90deg,#10B981,#4F9CF9)"></div></div></div>
         </div>
         <div class="skills-can">
-          <h3>¿Qué puedo construir?</h3>
+          <h3 data-es="¿Qué puedo construir?" data-en="What can I build?">¿Qué puedo construir?</h3>
           <ul class="can-list">
-            <li><div class="can-icon">🚀</div><div><strong>Apps móviles completas</strong><p>Flutter para Android e iOS con UI personalizada y animaciones</p></div></li>
-            <li><div class="can-icon">🎨</div><div><strong>Interfaces visuales</strong><p>Glassmorphism, gradientes, partículas, CustomPainter</p></div></li>
-            <li><div class="can-icon">⚡</div><div><strong>Animaciones fluidas</strong><p>Transiciones, micro-interacciones, loading screens</p></div></li>
-            <li><div class="can-icon">🌐</div><div><strong>Páginas web</strong><p>Landing pages, portfolios, webs interactivas con JS</p></div></li>
-            <li><div class="can-icon">🎮</div><div><strong>Videojuegos 2D</strong><p>Unity + C#, generación procedural, física, IA básica</p></div></li>
+            <li><div class="can-icon">🚀</div><div><strong data-es="Apps móviles completas" data-en="Complete mobile apps">Apps móviles completas</strong><p data-es="Flutter para Android e iOS con UI personalizada y animaciones" data-en="Flutter for Android and iOS with custom UI and animations">Flutter para Android e iOS con UI personalizada y animaciones</p></div></li>
+            <li><div class="can-icon">🎨</div><div><strong data-es="Interfaces visuales" data-en="Visual interfaces">Interfaces visuales</strong><p data-es="Glassmorphism, gradientes, partículas, CustomPainter" data-en="Glassmorphism, gradients, particles, CustomPainter">Glassmorphism, gradientes, partículas, CustomPainter</p></div></li>
+            <li><div class="can-icon">⚡</div><div><strong data-es="Animaciones fluidas" data-en="Smooth animations">Animaciones fluidas</strong><p data-es="Transiciones, micro-interacciones, loading screens" data-en="Transitions, micro-interactions, loading screens">Transiciones, micro-interacciones, loading screens</p></div></li>
+            <li><div class="can-icon">🌐</div><div><strong data-es="Páginas web" data-en="Web pages">Páginas web</strong><p data-es="Landing pages, portfolios, webs interactivas con JS" data-en="Landing pages, portfolios, interactive websites with JS">Landing pages, portfolios, webs interactivas con JS</p></div></li>
+            <li><div class="can-icon">🎮</div><div><strong data-es="Videojuegos 3D" data-en="3D Video games">Videojuegos 3D</strong><p data-es="Unity + C++, generación procedural, física 3D, IA" data-en="Unity + C++, procedural generation, 3D physics, AI">Unity + C++, generación procedural, física 3D, IA</p></div></li>
           </ul>
         </div>
       </div>
@@ -217,43 +193,51 @@
   <!-- PROJECTS -->
   <section class="projects" id="projects">
     <div class="container">
-      <span class="section-tag">Proyectos</span>
-      <h2 class="section-title">Lo que he <span class="accent">construido</span></h2>
+      <span class="section-tag" data-es="Proyectos" data-en="Projects">Proyectos</span>
+      <h2 class="section-title">
+        <span data-es="Lo que he" data-en="What I've">Lo que he</span>
+        <span class="accent" data-es=" construido" data-en=" built"> construido</span>
+      </h2>
       <div class="proj-grid">
-
         <div class="proj-card" style="--acc:#4F9CF9">
-          <div class="proj-cat">App Móvil</div>
+          <div class="proj-cat" data-es="App Móvil" data-en="Mobile App">App Móvil</div>
           <div class="proj-ico">📱</div>
           <h3>Dev Portfolio App</h3>
-          <p>Portafolio interactivo en Flutter con animaciones avanzadas, glassmorphism y componentes UI personalizados — esta misma app.</p>
+          <p data-es="Portafolio interactivo en Flutter con animaciones avanzadas, glassmorphism y componentes UI personalizados — esta misma app." data-en="Interactive Flutter portfolio with advanced animations, glassmorphism and custom UI components — this very app.">Portafolio interactivo en Flutter con animaciones avanzadas, glassmorphism y componentes UI personalizados — esta misma app.</p>
           <div class="proj-tech">Flutter • Dart</div>
           <ul class="proj-feats">
-            <li>Animaciones custom</li><li>Glassmorphism</li><li>CustomPainter</li><li>Responsive</li>
+            <li data-es="Animaciones custom" data-en="Custom animations">Animaciones custom</li>
+            <li>Glassmorphism</li>
+            <li>CustomPainter</li>
+            <li>Responsive</li>
           </ul>
         </div>
-
         <div class="proj-card" style="--acc:#7C3AED">
-          <div class="proj-cat">Videojuego</div>
+          <div class="proj-cat" data-es="Videojuego" data-en="Video Game">Videojuego</div>
           <div class="proj-ico">🎮</div>
           <h3>Roguelike Adventure</h3>
-          <p>Videojuego 2D roguelike con generación procedural de mazmorras en Unity. Sistema de combate, inventario y enemigos con IA.</p>
-          <div class="proj-tech">Unity • C# • 2D</div>
+          <p data-es="Videojuego 3D roguelike con generación procedural de escenarios en Unity. Sistema de combate, inventario y enemigos con IA. Desarrollado en C++." data-en="3D roguelike game with procedural level generation in Unity. Combat system, inventory and AI enemies. Built with C++.">Videojuego 3D roguelike con generación procedural de escenarios en Unity. Sistema de combate, inventario y enemigos con IA. Desarrollado en C++.</p>
+          <div class="proj-tech">Unity • C++ • 3D</div>
           <ul class="proj-feats">
-            <li>Generación procedural</li><li>Sistema de combate</li><li>IA enemigos</li><li>Inventario</li>
+            <li data-es="Generación procedural" data-en="Procedural generation">Generación procedural</li>
+            <li data-es="Sistema de combate" data-en="Combat system">Sistema de combate</li>
+            <li data-es="IA enemigos" data-en="Enemy AI">IA enemigos</li>
+            <li data-es="Inventario" data-en="Inventory">Inventario</li>
           </ul>
         </div>
-
         <div class="proj-card" style="--acc:#10B981">
-          <div class="proj-cat">App Móvil</div>
+          <div class="proj-cat" data-es="App Móvil" data-en="Mobile App">App Móvil</div>
           <div class="proj-ico">✅</div>
           <h3>Task Flow</h3>
-          <p>App de gestión de tareas con UI intuitiva, categorías, recordatorios y estadísticas de productividad desarrollada con Flutter.</p>
+          <p data-es="App de gestión de tareas con UI intuitiva, categorías, recordatorios y estadísticas de productividad desarrollada con Flutter." data-en="Task management app with intuitive UI, categories, reminders and productivity statistics built with Flutter.">App de gestión de tareas con UI intuitiva, categorías, recordatorios y estadísticas de productividad desarrollada con Flutter.</p>
           <div class="proj-tech">Flutter • Dart</div>
           <ul class="proj-feats">
-            <li>CRUD completo</li><li>Categorías</li><li>Notificaciones</li><li>Estadísticas</li>
+            <li data-es="CRUD completo" data-en="Full CRUD">CRUD completo</li>
+            <li data-es="Categorías" data-en="Categories">Categorías</li>
+            <li data-es="Notificaciones" data-en="Notifications">Notificaciones</li>
+            <li data-es="Estadísticas" data-en="Statistics">Estadísticas</li>
           </ul>
         </div>
-
       </div>
     </div>
   </section>
@@ -264,18 +248,18 @@
       <div class="dl-card">
         <div class="dl-glow"></div>
         <div class="dl-icon">📱</div>
-        <h2>Descarga mi Portfolio App</h2>
-        <p>Experimenta en tu Android las animaciones y funcionalidades que puedo crear con Flutter</p>
+        <h2 data-es="Descarga mi Portfolio App" data-en="Download my Portfolio App">Descarga mi Portfolio App</h2>
+        <p data-es="Experimenta en tu Android las animaciones y funcionalidades que puedo crear con Flutter" data-en="Experience on your Android the animations and features I can create with Flutter">Experimenta en tu Android las animaciones y funcionalidades que puedo crear con Flutter</p>
         <div class="dl-tags">
           <span>📦 Android APK</span>
-          <span>✅ Sin anuncios</span>
-          <span>🔒 Sin permisos intrusivos</span>
+          <span data-es="✅ Sin anuncios" data-en="✅ No ads">✅ Sin anuncios</span>
+          <span data-es="🔒 Sin permisos intrusivos" data-en="🔒 No intrusive permissions">🔒 Sin permisos intrusivos</span>
         </div>
         <a href="portfolio-christian.apk" class="btn btn-primary btn-lg" download>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Descargar APK
+          <span data-es="Descargar APK" data-en="Download APK">Descargar APK</span>
         </a>
-        <p class="dl-note">Compatible con Android 5.0+</p>
+        <p class="dl-note" data-es="Compatible con Android 5.0+" data-en="Compatible with Android 5.0+">Compatible con Android 5.0+</p>
       </div>
     </div>
   </section>
@@ -283,31 +267,24 @@
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container">
-      <span class="section-tag">Contacto</span>
-      <h2 class="section-title">¿Tienes un proyecto? <span class="accent">Hablemos</span></h2>
+      <span class="section-tag" data-es="Contacto" data-en="Contact">Contacto</span>
+      <h2 class="section-title">
+        <span data-es="¿Tienes un proyecto?" data-en="Have a project?">¿Tienes un proyecto?</span>
+        <span class="accent" data-es=" Hablemos" data-en=" Let's talk"> Hablemos</span>
+      </h2>
       <div class="contact-grid">
         <div class="contact-info">
-          <p class="contact-desc">Estoy disponible para proyectos freelance, trabajo remoto o posiciones junior. Respondo en menos de 24 horas.</p>
+          <p class="contact-desc" data-es="Estoy disponible para proyectos freelance, trabajo remoto o posiciones junior. Respondo en menos de 24 horas." data-en="I'm available for freelance projects, remote work or junior positions. I respond in less than 24 hours.">Estoy disponible para proyectos freelance, trabajo remoto o posiciones junior. Respondo en menos de 24 horas.</p>
           <div class="contact-items">
-            <div class="ci">
-              <div class="ci-ico">📧</div>
-              <div><div class="ci-lbl">Email</div><a href="mailto:christiandavidgonzalez329@gmail.com">christiandavidgonzalez329@gmail.com</a></div>
-            </div>
-            <div class="ci">
-              <div class="ci-ico">📍</div>
-              <div><div class="ci-lbl">Ubicación</div><span>Georgetown, Guyana</span></div>
-            </div>
-            <div class="ci">
-              <div class="ci-ico" style="background:rgba(16,185,129,.12);color:#10B981">🟢</div>
-              <div><div class="ci-lbl">Estado</div><span class="avail-text">Disponible para trabajar</span></div>
-            </div>
+            <div class="ci"><div class="ci-ico">📧</div><div><div class="ci-lbl">Email</div><a href="mailto:christiandavidgonzalez329@gmail.com">christiandavidgonzalez329@gmail.com</a></div></div>
+            <div class="ci"><div class="ci-ico">📍</div><div><div class="ci-lbl" data-es="Ubicación" data-en="Location">Ubicación</div><span>Georgetown, Guyana</span></div></div>
+            <div class="ci"><div class="ci-ico" style="background:rgba(16,185,129,.12);color:#10B981">🟢</div><div><div class="ci-lbl" data-es="Estado" data-en="Status">Estado</div><span class="avail-text" data-es="Disponible para trabajar" data-en="Available to work">Disponible para trabajar</span></div></div>
           </div>
         </div>
-        <a href="mailto:christiandavidgonzalez329@gmail.com?subject=Consulta%20%E2%80%94%20Christian%20Gonz%C3%A1lez&body=Hola%20Christian%2C%20me%20interesa%20tu%20perfil..."
-           class="email-cta">
+        <a href="mailto:christiandavidgonzalez329@gmail.com?subject=Job%20inquiry%20%E2%80%94%20Christian%20Gonz%C3%A1lez&body=Hello%20Christian%2C%20I%20am%20interested%20in%20your%20profile..." class="email-cta">
           <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <span>Enviar un email</span>
-          <p>Haz clic para abrir tu cliente de correo</p>
+          <span data-es="Enviar un email" data-en="Send an email">Enviar un email</span>
+          <p data-es="Haz clic para abrir tu cliente de correo" data-en="Click to open your email client">Haz clic para abrir tu cliente de correo</p>
         </a>
       </div>
     </div>

@@ -42,6 +42,16 @@ body {
 .nav-links { display: flex; list-style: none; gap: 28px; margin-left: auto; }
 .nav-links a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; transition: color .2s; }
 .nav-links a:hover { color: var(--accent); }
+.lang-btn {
+  display: flex; align-items: center; gap: 6px;
+  background: rgba(79,156,249,.12); border: 1px solid rgba(79,156,249,.35);
+  color: var(--accent); padding: 8px 14px; border-radius: 20px;
+  font-size: 13px; font-weight: 700; cursor: pointer;
+  transition: all .2s; font-family: 'Poppins', sans-serif;
+}
+.lang-btn:hover { background: rgba(79,156,249,.22); transform: translateY(-1px); }
+.lang-btn span { font-size: 12px; }
+
 .nav-cta {
   background: var(--accent); color: #fff; padding: 10px 20px;
   border-radius: 10px; text-decoration: none; font-size: 13px; font-weight: 600;
